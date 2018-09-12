@@ -72,6 +72,41 @@ input, select, textarea {
 	appearance: none;
 }
 
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    color: black;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.mainPage {
+	color: black;
+	text-align:center;
+	/*position:relative;*/
+	width:100%;
+}
+
+.next {
+    background-color: #f1f1f1;
+    color: black;
+    float:right;
+}
+
 .responsive {
 	width: 100%;
 	height: auto;
@@ -166,7 +201,7 @@ input, select, textarea {
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
 		color: #585858;
-		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+		/*border-bottom: dotted 1px rgba(88, 88, 88, 0.5);*/
 	}
 
 		a:hover {
