@@ -76,11 +76,54 @@ a {
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
+    /*text-align:center;*/
 }
 
 a:hover {
     color: black;
 }
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+/*End of animation*/
 
 .box {
   display: flex;
@@ -90,6 +133,11 @@ a:hover {
 
 
 .previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.resumeLink {
     background-color: #f1f1f1;
     color: black;
 }
@@ -162,9 +210,9 @@ a:hover {
 			transition: none !important;
 		}
 
-	a.resumeLink:hover, a.reportLink:hover {
+	/*a.resumeLink:hover, a.reportLink:hover {
 		color: #000000 !important;
-	}
+	}*/
 /* Loader */
 
 
